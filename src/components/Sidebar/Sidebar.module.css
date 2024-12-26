@@ -1,0 +1,144 @@
+.sidebar{
+    background-color: #fff;
+    width: 242px;
+    height: 100vh;
+    padding: 2vw 1vw;
+}
+
+
+/********* Brand-name *********/
+.brandName{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    font-family: "Inter", serif;
+}
+.brandName img{
+    width: 28.5px;
+    height: 30px;
+}
+.brandName>div{
+    font-size: 23px;
+}
+
+.menu{
+    display: none;
+}
+
+/********* Drop-Down *********/
+.dropdown{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 2px solid #dfe1e3;
+   border-radius: 10px;
+   padding: 10px 14px; 
+   font-family: "Inter", serif;
+   margin: 15px 0;
+   z-index: 1;
+}
+.dropdown>img{
+    height: 10px;
+} 
+
+/********* Button *********/
+.button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: none;
+    background-color: #1570ef;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    border: 2px solid #3181f1;
+}
+
+/********* Side-bar Items *********/
+.SideBarContent{
+    height: 80vh;
+}
+.sideBarItems{
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sideBarItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    padding: 10px 14px;
+}
+.sideBarItems div:nth-child(1) .sideBarItem:nth-child(1){
+    background-color: #1570ef;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+/* Adjust styles for responsive menu toggle */
+@media screen and (max-width: 755px) {
+    .sidebar {
+      height: 60px;
+      width: 100%;
+      background-color: #fff;
+      padding: 15px;
+    }
+  
+    
+    .sidebar .dropdown,.sidebar>div:nth-child(1){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .SideBarContent {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Position the items below the header */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      border-top: 2px solid #f0f0f0;
+      padding: 10px;
+      height: 450px;
+      border-bottom: 2px solid #d8d7d7;
+    }
+  
+    .SideBarContent div {
+      justify-content: flex-start;
+      /* padding: 10px; */
+    }
+  
+    .menu {
+      display: inline-block;
+      cursor: pointer;
+    }
+  
+    .showMenu {
+      display: flex;
+    }
+
+    .sideBarItems{
+        width: 100%;
+    }
+    .sideBarItems>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .sideBarItems .sideBarItem {
+        display: flex;
+        /* justify-content: center; */
+    }
+
+}
+  

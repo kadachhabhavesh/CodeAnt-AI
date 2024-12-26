@@ -1,0 +1,234 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.left,.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.center{
+    position: relative;
+}
+.left>img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card1{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+.card1:nth-child(1){
+    width: 427px;
+    height: 140px;
+    
+}
+.card1:nth-child(1) .cardTop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 8px;
+    font-family: 'inter';
+    padding: 10px 5px;
+    border-bottom: 1px solid #ebebeb;
+}
+.card1:nth-child(1) .cardBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 15px;
+    font-family: 'inter';
+    padding: 10px 5px;
+}
+.card1:nth-child(1) .cardBottom div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.card1:nth-child(1) .cardBottom div div:nth-child(1){
+    font-weight: 700;
+    font-size: medium;
+}
+.card1:nth-child(2){
+    width: 230px;
+    height: 140px;
+    position: relative;
+    right: -50%;
+    top: -10px;
+}
+
+.card1:nth-child(2) .cardTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-family: 'inter';
+    padding: 5px 10px;
+    text-align: center;
+}
+.card1:nth-child(2) .cardTop .Profit{
+    color: #0049C6;
+    font-weight: 600;
+}
+.card1:nth-child(2) .cardBottom{
+    padding: 5px 10px;
+    font-weight: 700;
+    font-family: 'inter';
+}
+.card1:nth-child(2) .cardBottom div:nth-child(1){
+    font-size: x-small;
+}
+.card1:nth-child(2) .cardBottom div:nth-child(2){
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right>.center{
+    width: 600px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ebebeb;
+    padding: 20px;
+}
+.right>.center>.centerTop{
+    padding: 30px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+.right>.center>.centerTop .brandName{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'inter';
+    font-size: 30px;
+}
+
+.right>.center>.centerTop .Welcome{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'inter';
+    font-weight: 600;
+    margin-top: 20px;
+}
+.right>.center>.centerTop .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa; 
+    margin-top: 20px;
+}
+.right>.center>.centerTop .buttons button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'inter';
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 50%;
+    background-color: #fafafa;
+}
+.baseButton {
+    background-color: #f0f0f0; /* Default background color */
+    color: #000; /* Default text color */
+    border: 1px solid #ccc; /* Default border */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #1570ef; /* Blue background for selected */
+    color: #fff; /* Optional: Change text color when selected */
+}
+.right>.center>.centerBottom{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.socialMediaButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'inter';
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 75%;
+    border:2px solid #ebe8e8;
+}
+
+.policy{
+    font-family: 'inter';
+}
+.policy span{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px){
+    .left{
+        display: none;
+    }
+    .right{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .right{
+        width: 90%;
+    }
+    .right>.center{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+    .right>.center{
+        width: 95%;
+    }
+    .socialMediaButton{
+        width: 100%;
+    }
+    
+}
+
+
+

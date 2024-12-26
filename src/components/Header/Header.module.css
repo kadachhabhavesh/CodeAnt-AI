@@ -1,0 +1,103 @@
+
+.header{
+    height: 156px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom:2px solid #f9ebea ;
+}
+.headerTop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.headerTop .title div:nth-child(1){
+    font-size: 22px;
+    font-family: "Inter", serif;
+    font-weight: 600;
+}
+.headerTop .title div:nth-child(2){
+    font-size: 12px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #70747d;
+    line-height: 2;
+}
+.headerTop div:nth-child(2){
+    display: flex;
+    gap: 10px;
+}
+.button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: none;
+    background-color: #1570ef;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    border: 2px solid #3181f1;
+    white-space: nowrap;
+}
+.headerTop .button:nth-child(1){
+    background-color: #fff;
+    border: 2px solid #dfe1e3;
+    color: #2d2d2d;
+}
+
+
+.headerBottom .searchBar{
+    width: 366px;
+    height: 45px;
+    border: 2px solid #dfe1e3;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    padding:0 5px;
+}
+.headerBottom .searchBar>div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerBottom .searchBar input{
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: "Inter", serif;
+}
+::placeholder{
+    font-size: 18px;
+    font-family: "Inter", serif;
+    color: #2d2d2d;
+}
+@media screen and (max-width: 550px){
+    .header{
+        padding: 10px;
+        height: 187px;
+    }
+    .headerTop{
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+    .headerBottom .searchBar {
+        width: calc(100% - 10px); 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+    }
+    .headerBottom .searchBar{
+        width: 100%;
+    }
+}
